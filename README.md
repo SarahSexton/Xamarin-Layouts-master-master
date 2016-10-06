@@ -1,3 +1,3 @@
 # Xamarin-Layouts
-Sample Xamarin solution to experiment with Xamarin.Forms layouts. This is a work in progress. Only contains a grid layout for now.
-![Screenshot](/images/TabletRotate.gif)
+Sample Xamarin solution to experiment with Xamarin.Forms layouts. This is a work in progress.
+![Screenshot](/images/Clock2.png)
