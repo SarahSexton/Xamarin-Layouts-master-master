@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			xmlns:controls="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="Xamarin_Layouts.GridLayoutXaml">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="0, 20, 0, 0" />
+  </ContentPage.Padding>
+    
+	<Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+		<RowDefinition Height="*" />
+		<RowDefinition Height="*" />
+		<RowDefinition Height="*" />
+		<RowDefinition Height="*" />
+		<RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="2*" />
+        <ColumnDefinition Width="1*" />
+      </Grid.ColumnDefinitions>
+
+    	<Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Blue" MinimumHeightRequest="100" HorizontalOptions="FillAndExpand"/> 
+
+		<Label x:Name="Clock" Grid.Row="0" Grid.Column="0" Text="{Binding ClockTime}" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+    	<Label x:Name="HospitalName" Grid.Row="0" Grid.Column="1" Text="{Binding HospitalName}" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+		<StackLayout x:Name="ButtonStack" Grid.Row="0" Grid.Column="2" Orientation="Horizontal" HorizontalOptions="End">
+			<controls:CachedImage x:Name="Settings" StyleId="Settings" IsCircleImage="true" Source="WaterIcon.png" Aspect="AspectFit" BorderColor="White" BorderThickness="1" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+			<controls:CachedImage x:Name="Wifi" StyleId="Wifi" IsCircleImage="true" Source="WaterIcon.png" Aspect="AspectFit" BorderColor="White" BorderThickness="1" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+			<controls:CachedImage x:Name="Volume" StyleId="Volume" IsCircleImage="true" Source="WaterIcon.png" Aspect="AspectFit" BorderColor="White" BorderThickness="1" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+			<controls:CachedImage x:Name="Help" StyleId="Help" Margin="0,0,10,0" IsCircleImage="true" Source="WaterIcon.png" Aspect="AspectFit" BorderColor="White" BorderThickness="2" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+		</StackLayout>
+
+
+
+		
+    	<StackLayout x:Name="Water" StyleId="Water" Grid.Row="1" Grid.Column="0" BackgroundColor="Teal" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+    		<controls:CachedImage Margin="10,0,0,0" IsCircleImage="true" Source="WaterIcon.png" Aspect="AspectFit" BorderColor="Transparent" BorderThickness="0" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center"/>
+			<Label Margin="5,0,0,0" Text="Water" VerticalOptions="Center"/>
+		</StackLayout>
+
+
+
+
+
+		
+		<StackLayout x:Name="Bathroom" StyleId="Bathroom" Grid.Row="2" Grid.Column="0" BackgroundColor="Teal" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+    		<controls:CachedImage Margin="10,0,0,0" IsCircleImage="true" Source="BathroomIcon.png" Aspect="AspectFit" HeightRequest="60" WidthRequest="60" DownsampleToViewSize="true"/>
+			<Label Margin="5,0,0,0" Text="Bathroom" VerticalOptions="Center"/>
+		</StackLayout>
+		<StackLayout x:Name="Pain" StyleId="Pain" Grid.Row="3" Grid.Column="0" BackgroundColor="Teal" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+    		<controls:CachedImage Margin="10,0,0,0" IsCircleImage="true" Source="PainIcon.png" Aspect="AspectFit" HeightRequest="60" WidthRequest="60" DownsampleToViewSize="true"/>
+			<Label Margin="5,0,0,0" Text="Pain" VerticalOptions="Center"/>
+		</StackLayout>
+		<StackLayout x:Name="OtherMedical" StyleId="OtherMedical" Grid.Row="4" Grid.Column="0" BackgroundColor="Teal" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+    		<controls:CachedImage Margin="10,0,0,0" IsCircleImage="true" Source="MedicalIcon.png" Aspect="AspectFit" HeightRequest="60" WidthRequest="60" DownsampleToViewSize="true"/>
+			<Label Margin="5,0,0,0" Text="Other Medical" VerticalOptions="Center"/>
+		</StackLayout>
+		<StackLayout x:Name="OtherNonMedical" StyleId="OtherNonMedical" Grid.Row="5" Grid.Column="0" BackgroundColor="Teal" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+    		<controls:CachedImage Margin="10,0,0,0" IsCircleImage="true" Source="OtherIcon.png" Aspect="AspectFit" HeightRequest="60" WidthRequest="60" DownsampleToViewSize="true"/>
+			<Label Margin="5,0,0,5" Text="Other Non-Medical" VerticalOptions="Center" LineBreakMode="WordWrap"/>
+		</StackLayout>
+		<StackLayout x:Name="Emergency" StyleId="Emergency" Grid.Row="6" Grid.Column="0" BackgroundColor="Teal" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+    		<controls:CachedImage Margin="10,0,0,0" IsCircleImage="true" Source="EmergencyIcon.png" Aspect="AspectFit" HeightRequest="60" WidthRequest="60" DownsampleToViewSize="true"/>
+			<Label Margin="5,0,0,0" Text="Emergency" VerticalOptions="Center"/>
+		</StackLayout>
+		
+      <!--<StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="Teal">
+        <Button x:Name="btnWater" Text="Water"/>
+        <Button x:Name="btnBathroom" Text="Bathroom"/>
+        <Button x:Name="btnPain" Text="Pain"/>
+        <Button x:Name="btnOtherMed" Text="Other Medical"/>
+        <Button x:Name="btnOtherNonMed" Text="Other Non-Medical"/>
+        <Button x:Name="btnEmergency" Text="Emergency"/>
+      </StackLayout>-->
+  
+      <Label x:Name="lblStatus" Grid.Row="1" Grid.Column="1" Grid.RowSpan="6" BackgroundColor="Yellow"
+             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+             Text="This is where different status messages will be shown." />
+  
+      <StackLayout Grid.Row="1" Grid.Column="2" Grid.RowSpan="3">
+        <ListView x:Name="lstStaff" HorizontalOptions="FillAndExpand" MinimumHeightRequest="200" BackgroundColor="Green"/>
+        <Image  BackgroundColor="Red" MinimumHeightRequest="200" MinimumWidthRequest="200"/>
+      </StackLayout>
+  </Grid>
+</ContentPage>

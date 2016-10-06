@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{74BF9402-3E13-4003-8923-BC20A1294CE2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="source/FFImageLoading.Forms.WinRT/CachedImageRenderer.cs">
+    <Files>
+      <File FileName="source/FFImageLoading.Forms/CachedImage.cs" Line="21" Column="42" />
+      <File FileName="source/FFImageLoading.Forms.Droid/CachedImageRenderer.cs" Line="375" Column="45" />
+      <File FileName="source/FFImageLoading.Forms.WinRT/CachedImageRenderer.cs" Line="24" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FFImageLoading.Droid PreferredExecutionTarget="Android.Nexus_10_API_23_Tablet" />
+</Properties>

@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{2CBF1A98-BCB5-46FB-B725-620EF92E28AA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Xamarin-Layouts/Xamarin_Layouts/ViewModels/BaseViewModel.cs">
+    <Files>
+      <File FileName="Xamarin-Layouts/Xamarin_Layouts/GridLayoutXaml.xaml.cs" Line="17" Column="31" />
+      <File FileName="Xamarin-Layouts/Xamarin_Layouts/ViewModels/RootPageViewModel.cs" Line="25" Column="5" />
+      <File FileName="Xamarin-Layouts/Xamarin_Layouts/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Xamarin__Layouts.Droid PreferredExecutionTarget="Android.Nexus_10_API_23_Tablet" />
+  <MonoDevelop.Ide.ItemProperties.Xamarin__Layouts.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.26371BF5-0A4D-4E6F-AE21-85F7D78B1F16" />
+</Properties>
